@@ -1,10 +1,17 @@
 name = "worker-aged-bush-cc6a"
 type = "webpack"
 account_id = "e98a1f01bbc53d0d784c99f0c4691fef"
-workers_dev = true
+workers_dev = false
 webpack_config = "webpack.config.js"
+route = "www.pitmtech.com/flutterapp/*"
 
 # Define the route to match /flutterapp and proxy it to the desired destination
 [[routes]]
 pattern = "www.pitmtech.com/flutterapp/*"
 script = "workers-site"
+
+[site]
+bucket = "public"
+entry-point = "index.html"
+error_page = "404.html"
+pages_build_output_dir = "public"
