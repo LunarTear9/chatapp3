@@ -1,5 +1,4 @@
-# README
-
+## CHAT APP
 Very basic chat app made using flutter
 
 - Account Feature
